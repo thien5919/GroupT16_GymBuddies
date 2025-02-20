@@ -81,7 +81,7 @@ android {
 
     namespace "com.groupt16.gymbuddies"
     defaultConfig {
-        applicationId "com.gymbuddies"
+        applicationId "com.groupt16.gymbuddies"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -106,6 +106,9 @@ android {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
+    }
+    buildFeatures {
+        buildConfig = true // ✅ Bật tính năng BuildConfig
     }
 }
 
